@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
 
 android {
     compileSdkVersion versions.compileSdk
@@ -28,7 +27,7 @@ dependencies {
     compile libraries.robototextview
     compile libraries.butterKnife
 
-    apt libraries.butterKnifeCompiler
+    annotationProcessor libraries.butterKnifeCompiler
 
     provided libraries.xposed
     provided libraries.xposedSources
